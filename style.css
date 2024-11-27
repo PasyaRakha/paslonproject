@@ -208,6 +208,7 @@ svg path {
 
 .visi h1, .misi h1, .proker h1 {
     font-size: 24px;
+    text-align: center;
 }
 
 .visi p, .misi p, .proker p {
