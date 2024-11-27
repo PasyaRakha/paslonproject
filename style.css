@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    scrollbar-width: none;
+}
+
+body{
+    margin :0;
+    background-color: #401457;
+    font-family: Poppins;
+    font-size: 15px;
+}
+
+.home {
+    height: 100vh;
+    overflow: hidden;
+    background: rgb(251,182,63);
+background: radial-gradient(circle, rgba(251,182,63,1) 0%, rgba(104,88,251,1) 58%, rgba(225,70,252,1) 100%);
+    animation: zoomOut 2s ease-in-out forwards;
+}
+
+@keyframes zoomOut{
+    0% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.banner{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.banner .bg{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center bottom;
+    transition: 0.1s;
+    overflow: hidden;
+}
+.banner .bg-1{
+    background-image: url('parallax/cahayabiru.png');
+}
+.banner .bg-2{
+    background-image: url('parallax/tanah.png');
+}
+.banner .bg-3{
+    background-image: url('parallax/batu.png');
+}
+.banner .bg-4{
+    background-image: url('parallax/peti.png');
+}
+.banner .bg-5{
+    background-image: url('parallax/ufo.png');
+}
+.banner .bg-6{
+    background-image: url('parallax/jamur.png');
+}
+.banner .bg-7{
+    background-image: url('parallax/tanaman.png');
+}
+.banner .bg-8{
+    background-image: url('parallax/tungu.png');
+}
+.banner .bg-9{
+    background-image: url('parallax/pohon.png');
+}
+.banner .bg-10{
+    background-image: url('parallax/portal.png');
+}
+.banner .bg-11{
+    background-image: url('parallax/tungu2.png');
+}
+.banner .bg-12{
+    background-image: url('parallax/cahayakuning.png');
+}
+.banner .bg-13{
+    background-image: url('parallax/PaslonPic.png');
+}
+.banner .bg-14{
+    background-image: url('parallax/bawah.png');
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    position: absolute;
+}
+
+
+
+/* #8352a1 */
+
+svg path {
+    fill: transparent;
+    stroke: #401457; 
+    stroke-width: 0.1;
+    stroke-dasharray: 60;
+    stroke-dashoffset: 60;
+    animation: textAnimation 4s ease-in-out 1 forwards;
+}
+
+@keyframes textAnimation {
+    0% {
+        stroke-dashoffset: 60;
+    }
+    80% {
+        fill: transparent;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: #fff;
+    }
+}
+
+.reason {
+    height: 100vh;
+    width: 100%;
+    background-color: #722b97;
+    border-radius: 0px 0px 100px 100px;
+}
+
+.why {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.why h1 {
+    color: aliceblue;
+    font-size: 40px;
+}
+
+.thereason {
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card {
+    height: 35vh;
+    width: 40%;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 13px;
+    color: antiquewhite;
+}
+
+.card img {
+    width: 25vh;
+    height: 25vh;
+}
+
+.detail {
+    height: 100vh;
+    width: 100%;
+    background-color: #401457;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+
+.visi, .misi {
+    flex: 1;
+    min-width: 280px;
+    background-color: #722b97;
+    border-radius: 25px;
+    color: aliceblue;
+    font-weight: 600;
+    place-items: center;
+    padding: 10px;
+}
+
+.visi h1, .misi h1, .proker h1 {
+    font-size: 24px;
+}
+
+.visi p, .misi p, .proker p {
+    font-size: 18px;
+}
+
+
+.bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.proker {
+    background-color: #722b97;
+    border-radius: 25px;
+    color: aliceblue;
+    place-items: center;
+    font-weight: 600;
+    padding: 10px;
+}
+
+
+.profile {
+    width: 100%;
+    height: 100vh;
+    background-color: #722b97;
+    border-radius: 50px;
+
+}
+
+.header {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #fff;
+}
+
+.jabatan {
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: aliceblue;
+    font-size: 13px;
+}
+
+.jabatan a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* background: rgb(29 30 30 / 30%); */
+.ketos {
+    height: 80vh;
+    width: 40%;
+    place-items: center;
+    border-radius: 25px;
+    background-color: #401457;
+    box-shadow: rgb(29 30 30 / 30%) 5px 5px;
+}
+
+.ketos img {
+    height: 20vh;
+}
+
+
+
+.waketos {
+    height: 80vh;
+    width: 40%;
+    place-items: center;
+    border-radius: 25px;
+    background-color: #401457;
+    box-shadow: rgb(29 30 30 / 30%) 5px 5px;
+}
+
+.waketos img {
+    height: 20vh;
+}
+
+
+
+
+.kuru {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.kururu {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.kurukuru {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #722b97;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+
+.kururing {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    background-color: #722b97;
+    border-radius: 25px;
+}
+
+.image {
+    position: absolute;
+    top: 50%;
+    left: 100%; /* Mulai di luar layar */
+    transform: translateY(-50%);
+    width: 300px;
+    transition: transform 2s linear; /* Gerakan animasi */
+}
+
+footer {
+    height: 5vh;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px 25px 0px 0px;
+    background-color: #722b97;
+    margin-top: 10px;
+}
+footer h1 {
+    font-size: 12px;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .banner .bg-13 {
+        height: 400px;
+        bottom: 20vh;
+    }
+
+    .reason {
+        border-radius: 0 0 50px 50px;
+    }
+
+    .why h1 {
+        font-size: 20px;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .card {
+        font-size: 8px;
+    }
+
+    .card img {
+        width: 18vh;
+        height: 18vh;
+    }
+
+    .detail {
+        height: 120vh;
+    }
+
+    .top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .visi, .misi, .proker {
+        width: 90%;
+    }
+
+    .visi h1, .misi h1, .proker h1 {
+        font-size: 15px;
+    }
+
+    .visi p, .misi p, .proker p {
+        font-size: 10px;
+    }
+
+    .profile {
+        height: 150vh;
+        width: 100%;
+    }
+
+    .header {
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        color: #fff;
+    }
+
+    .jabatan {
+        display: grid;
+        width: 100%;
+    }
+
+    .ketos {
+        height: 65vh;
+        width: 300px;
+        font-size: 10px;
+    }
+
+    .ketos p {
+        font-size: 10px;
+    }
+
+    .waketos {
+        height: 65vh;
+        width: 100%;
+        font-size: 10px;
+        margin-top: 5vh;
+    }
+
+    footer h1 {
+        font-size: 8px;
+    }
+
+    .image {
+        width: 200px;
+        transition: transform 1s linear;
+    }
+
+}
