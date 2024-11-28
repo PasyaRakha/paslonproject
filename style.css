@@ -490,7 +490,7 @@ background: linear-gradient(180deg, rgba(255,228,130,1) 0%, rgba(247,156,194,1) 
     }
 
     .ketos {
-        height: 73vh;
+        height: 70vh;
         width: 300px;
         font-size: 10px;
     }
@@ -500,7 +500,7 @@ background: linear-gradient(180deg, rgba(255,228,130,1) 0%, rgba(247,156,194,1) 
     }
 
     .waketos {
-        height: 73vh;
+        height: 70vh;
         width: 300px;
         font-size: 10px;
         margin-top: 5vh;
