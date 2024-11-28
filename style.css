@@ -449,7 +449,7 @@ background: linear-gradient(180deg, rgba(255,228,130,1) 0%, rgba(247,156,194,1) 
     }
 
     .detail {
-        height: 85vh;
+        height: 100vh;
     }
 
     .top {
@@ -466,7 +466,7 @@ background: linear-gradient(180deg, rgba(255,228,130,1) 0%, rgba(247,156,194,1) 
     }
 
     .visi p, .misi p, .proker p {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .profile {
