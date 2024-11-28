@@ -413,6 +413,15 @@ footer h1 {
     font-size: 12px;
 }
 
+footer a {
+    text-decoration: none;
+    background: rgb(255,228,130);
+background: linear-gradient(180deg, rgba(255,228,130,1) 0%, rgba(247,156,194,1) 50%, rgba(205,180,255,1) 100%);
+-webkit-background-clip: text; /* memastikan gradient hanya pada teks */
+            background-clip: text;
+            color: transparent;
+}
+
 
 
 @media screen and (max-width: 768px){
